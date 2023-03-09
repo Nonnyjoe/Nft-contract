@@ -25,7 +25,7 @@ contract Lottery {
     // event log when the admin wants to transfer the eth to the winner of the lottery
     event _withdrawMoney(address indexed winner, uint256 indexed amount);
 
-    /////////
+    ///////// constructor
     constructor(uint256 _amount, uint8 _noOfPlayers, address _addr) {
         organizer = msg.sender; // to set the creatot of the lottery contract
         minAmount = _amount; // to set the minimum amount a player can use to participate
