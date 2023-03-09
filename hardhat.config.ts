@@ -14,6 +14,12 @@ const config: HardhatUserConfig = {
       url: process.env.GOERLI_RPC,
       //@ts-ignore
       accounts: [process.env.PRIVATE_KEY, process.env.PRIVATE_KEY2],
+    },
+
+    sepolia: {
+      url: process.env.SEPOLIA_RPC,
+      //@ts-ignore
+      accounts: [process.env.PRIVATE_KEY, process.env.PRIVATE_KEY2],
     }
   },
   etherscan:{
